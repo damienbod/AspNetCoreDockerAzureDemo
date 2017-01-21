@@ -13,3 +13,6 @@ src/AngularClient/obj
 src/AspNetCoreThingsServer/obj
 src/AngularClient/wwwroot
 src/AngularClient/aot
+src/AngularClient/bin
+src/AspNetCoreThingsServer/bin
+.vs/AspNetCoreThingsServer/v15/.suo
