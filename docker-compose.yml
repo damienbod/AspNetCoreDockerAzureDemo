@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  angularclient:
+    image: angularclient
+    build:
+      context: ./src/AngularClient
+      dockerfile: Dockerfile
+
+  aspnetcorethingsserver:
+    image: aspnetcorethingsserver
+    build:
+      context: ./src/AspNetCoreThingsServer
+      dockerfile: Dockerfile

@@ -1,18 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26020.0
+VisualStudioVersion = 15.0.26127.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ABF7502B-DA45-4936-A4D4-E0560B6AADFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreThingsServer", "src\AspNetCoreThingsServer\AspNetCoreThingsServer.csproj", "{FFBFC1AC-11A2-4CD1-9B71-0D1D7BC7DE43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreThingsServer", "src\AspNetCoreThingsServer\AspNetCoreThingsServer.csproj", "{FFBFC1AC-11A2-4CD1-9B71-0D1D7BC7DE43}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5DA5E9DE-7644-44FF-B753-74405927EE56}"
-	ProjectSection(SolutionItems) = preProject
-		docker-compose.ci.build.yml = docker-compose.ci.build.yml
-	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularClient", "src\AngularClient\AngularClient.csproj", "{1D7B4540-5B9C-41EB-B89E-E5F18973D348}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularClient", "src\AngularClient\AngularClient.csproj", "{1D7B4540-5B9C-41EB-B89E-E5F18973D348}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{CCC68596-2CEE-45FD-ABBA-A720737839BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +47,18 @@ Global
 		{1D7B4540-5B9C-41EB-B89E-E5F18973D348}.Release|x64.Build.0 = Release|x64
 		{1D7B4540-5B9C-41EB-B89E-E5F18973D348}.Release|x86.ActiveCfg = Release|x86
 		{1D7B4540-5B9C-41EB-B89E-E5F18973D348}.Release|x86.Build.0 = Release|x86
+		{CCC68596-2CEE-45FD-ABBA-A720737839BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCC68596-2CEE-45FD-ABBA-A720737839BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCC68596-2CEE-45FD-ABBA-A720737839BC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CCC68596-2CEE-45FD-ABBA-A720737839BC}.Debug|x64.Build.0 = Debug|Any CPU
+		{CCC68596-2CEE-45FD-ABBA-A720737839BC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CCC68596-2CEE-45FD-ABBA-A720737839BC}.Debug|x86.Build.0 = Debug|Any CPU
+		{CCC68596-2CEE-45FD-ABBA-A720737839BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCC68596-2CEE-45FD-ABBA-A720737839BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCC68596-2CEE-45FD-ABBA-A720737839BC}.Release|x64.ActiveCfg = Release|Any CPU
+		{CCC68596-2CEE-45FD-ABBA-A720737839BC}.Release|x64.Build.0 = Release|Any CPU
+		{CCC68596-2CEE-45FD-ABBA-A720737839BC}.Release|x86.ActiveCfg = Release|Any CPU
+		{CCC68596-2CEE-45FD-ABBA-A720737839BC}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -20,7 +20,7 @@ module.exports = {
     },
 
     output: {
-        path: './wwwroot/',
+        path: __dirname +  '/wwwroot/',
         filename: 'dist/[name].bundle.js',
         chunkFilename: 'dist/[id].chunk.js',
         publicPath: '/'
@@ -29,11 +29,14 @@ module.exports = {
     resolve: {
         extensions: ['.ts', '.js', '.json', '.css', '.scss', '.html']
     },
-
+	
     devServer: {
         historyApiFallback: true,
-        stats: 'minimal',
-        outputPath: path.join(__dirname, 'wwwroot/')
+        contentBase: path.join(__dirname, '/wwwroot/'),
+        watchOptions: {
+            aggregateTimeout: 300,
+            poll: 1000
+        }
     },
 
     module: {
