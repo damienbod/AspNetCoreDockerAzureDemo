@@ -8,6 +8,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreThingsServer", "src\AspNetCoreThingsServer\AspNetCoreThingsServer.csproj", "{FFBFC1AC-11A2-4CD1-9B71-0D1D7BC7DE43}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5DA5E9DE-7644-44FF-B753-74405927EE56}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularClient", "src\AngularClient\AngularClient.csproj", "{1D7B4540-5B9C-41EB-B89E-E5F18973D348}"
 EndProject
