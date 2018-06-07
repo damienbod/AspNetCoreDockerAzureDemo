@@ -21,34 +21,36 @@ export class HomeComponent implements OnInit {
         this.getAllThings();
     }
 
-    public addThing() {
-        this._dataService
-            .Add(this.thing)
-            .subscribe(() => {
-                this.getAllThings();
-                this.thing = new Thing();
-            }, (error) => {
-                console.log(error);
-            });
+    addThing() {
+		this.dataService.add(this.thing).subscribe(
+		  () => {
+			this.getAllThings();
+			this.thing = new Thing();
+		  },
+		  error => {
+			console.log(error);
+		  }
+		);
     }
+	
+	deleteThing(thing: Thing) {
+		this.dataService.delete(thing.id).subscribe(
+		  () => {
+			this.getAllThings();
+		  },
+		  error => {
+			console.log(error);
+		  }
+		);
+	}
 
-    public deleteThing(thing: Thing) {
-        this._dataService
-            .Delete(thing.id)
-            .subscribe(() => {
-                this.getAllThings();
-            }, (error) => {
-                console.log(error);
-            });
-    }
-
-    private getAllThings() {
-        this._dataService
-            .GetAll()
-            .subscribe(
-            data => this.things = data,
-            error => console.log(error),
-            () => console.log('Get all complete')
-            );
-    }
+	private getAllThings() {
+		this.dataService
+		  .getAll()
+		  .subscribe(
+			data => (this.things = data),
+			error => console.log(error),
+			() => console.log('Get all complete')
+		  );
+		}
 }
