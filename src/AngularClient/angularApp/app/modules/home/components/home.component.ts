@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
             }
         );
     }
-	
+
     deleteThing(thing: Thing) {
         this.dataService.delete(thing.id).subscribe(
             () => {
