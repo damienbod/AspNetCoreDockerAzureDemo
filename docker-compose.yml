@@ -5,10 +5,10 @@ services:
     image: ${DOCKER_REGISTRY}aspnetcorethingsserver
     build:
       context: .
-      dockerfile: aspnetcorethingsserver/Dockerfile
+      dockerfile: AspNetCoreThingsServer/Dockerfile
 
   angularclient:
     image: ${DOCKER_REGISTRY}angularclient
     build:
       context: .
-      dockerfile: angularclient/Dockerfile
+      dockerfile: AngularClient/Dockerfile
