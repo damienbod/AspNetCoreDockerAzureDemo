@@ -13,7 +13,7 @@ import { HomeModule } from './modules/home/home.module';
         BrowserModule,
         AppRoutes,
         SharedModule.forRoot(),
-		HomeModule,
+        HomeModule,
         HttpClientModule
     ],
 

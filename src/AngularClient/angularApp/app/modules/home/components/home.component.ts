@@ -3,7 +3,7 @@ import { ThingService } from './../../../services/thingService';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'home-component',
+    selector: 'app-home',
     templateUrl: 'home.component.html'
 })
 
