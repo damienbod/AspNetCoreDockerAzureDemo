@@ -1,9 +1,8 @@
-import { map } from 'rxjs/operators';
-import { Thing } from './../models/thing';
-import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-
+import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+
+import { Thing } from './../models/thing';
 import { Configuration } from '../app.constants';
 
 @Injectable()

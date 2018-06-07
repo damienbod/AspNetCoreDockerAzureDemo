@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
     public things: Thing[] = [];
     public thing: Thing = new Thing();
 
-    constructor(private _dataService: ThingService) {
+     constructor(private dataService: ThingService) {
         this.message = 'Things from the ASP.NET Core API';
     }
 
