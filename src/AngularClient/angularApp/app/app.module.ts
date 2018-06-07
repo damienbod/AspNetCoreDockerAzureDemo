@@ -8,8 +8,6 @@ import { AppRoutes } from './app.routes';
 import { SharedModule } from './modules/shared/shared.module';
 import { HomeModule } from './modules/home/home.module';
 
-
-
 @NgModule({
     imports: [
         BrowserModule,

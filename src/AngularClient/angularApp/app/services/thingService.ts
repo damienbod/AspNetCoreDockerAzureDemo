@@ -1,5 +1,4 @@
-
-import {map} from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 import { Thing } from './../models/thing';
 import { Injectable } from '@angular/core';
 import { Http, Response, Headers } from '@angular/http';
