@@ -30,7 +30,7 @@ export class ThingService {
     }
 
     public Add = (thingToAdd: Thing): Observable<Thing> => {
-        let toAdd = JSON.stringify({ name: thingToAdd.name });
+        const toAdd = JSON.stringify({ name: thingToAdd.name });
 
         return this._http.post(this.actionUrl, toAdd, { headers: this.headers }).pipe(map(res => <Thing>res.json()));
     }
