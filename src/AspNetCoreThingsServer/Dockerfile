@@ -1,14 +1,14 @@
-FROM microsoft/dotnet:2.1-aspnetcore-runtime AS base
+FROM microsoft/dotnet:2.1-aspnetcore-runtime-nanoserver-1709 AS base
 WORKDIR /app
 EXPOSE 17484
 EXPOSE 44326
 
-FROM microsoft/dotnet:2.1-sdk AS build
+FROM microsoft/dotnet:2.1-sdk-nanoserver-1709 AS build
 WORKDIR /src
-COPY AspNetCoreThingsServer/AspNetCoreThingsServer.csproj AspNetCoreThingsServer/
-RUN dotnet restore AspNetCoreThingsServer/AspNetCoreThingsServer.csproj
+COPY src/AspNetCoreThingsServer/AspNetCoreThingsServer.csproj src/AspNetCoreThingsServer/
+RUN dotnet restore src/AspNetCoreThingsServer/AspNetCoreThingsServer.csproj
 COPY . .
-WORKDIR /src/AspNetCoreThingsServer
+WORKDIR /src/src/AspNetCoreThingsServer
 RUN dotnet build AspNetCoreThingsServer.csproj -c Release -o /app
 
 FROM build AS publish

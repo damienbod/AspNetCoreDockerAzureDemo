@@ -20,3 +20,5 @@ src/AspNetCoreThingsServer/bin
 **/*.js.map
 /.vs/
 /obj
+/aspnetcorethingsserver/obj
+/angularclient/obj
