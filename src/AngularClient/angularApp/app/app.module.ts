@@ -1,21 +1,21 @@
-import { NgModule, APP_INITIALIZER } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { Configuration } from './app.constants';
 
 import { AppComponent } from './app.component';
 import { AppRoutes } from './app.routes';
-import { CoreModule } from './core/core.module';
-import { HomeModule } from './home/home.module';
+import { SharedModule } from './modules/shared/shared.module';
+import { HomeModule } from './modules/home/home.module';
 
-import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({
     imports: [
         BrowserModule,
         AppRoutes,
-        SharedModule,
+        SharedModule.forRoot(),
+		HomeModule,
         HttpClientModule
     ],
 
