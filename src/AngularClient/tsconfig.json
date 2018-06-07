@@ -9,18 +9,20 @@
     "removeComments": true,
     "noImplicitAny": true,
     "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "strict":  true,
+    "noUnusedParameters": true,
     "lib": [
       "es2015",
       "dom"
     ],
-    "types": [
-      "node"
+    "typeRoots": [
+      "./node_modules/@types/"
     ]
   },
-  "files": [
-    "angular2App/app/app.module.ts",
-    "angular2App/app/modules/about/about.module.ts",
-    "angular2App/main.ts"
+  "exclude": [
+    "node_modules",
+    "./angularApp/main-aot.ts"
   ],
   "awesomeTypescriptLoaderOptions": {
     "useWebpackText": true
