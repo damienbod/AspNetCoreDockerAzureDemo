@@ -16,3 +16,7 @@ src/AngularClient/aot
 src/AngularClient/bin
 src/AspNetCoreThingsServer/bin
 .vs/AspNetCoreThingsServer/v15/.suo
+**/*.*js
+**/*.js.map
+/.vs/
+/obj
