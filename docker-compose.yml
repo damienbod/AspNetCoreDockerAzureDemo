@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  aspnetcorethingsserver:
+    image: damienbod/aspnetcorethingsserver
+    build:
+      context: .
+      dockerfile: AspNetCoreThingsServer\Dockerfile
+
+  angularclient:
+    image: damienbod/aspnetcorethingsclient
+    build:
+      context: .
+      dockerfile: AngularClient\Dockerfile
+
