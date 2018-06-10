@@ -3,18 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26127.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ABF7502B-DA45-4936-A4D4-E0560B6AADFD}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreThingsServer", "src\AspNetCoreThingsServer\AspNetCoreThingsServer.csproj", "{FFBFC1AC-11A2-4CD1-9B71-0D1D7BC7DE43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreThingsServer", "AspNetCoreThingsServer\AspNetCoreThingsServer.csproj", "{FFBFC1AC-11A2-4CD1-9B71-0D1D7BC7DE43}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5DA5E9DE-7644-44FF-B753-74405927EE56}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularClient", "src\AngularClient\AngularClient.csproj", "{1D7B4540-5B9C-41EB-B89E-E5F18973D348}"
-EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A17195CE-4347-41FD-91B4-3AA72AB690F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularClient", "AngularClient\AngularClient.csproj", "{1D7B4540-5B9C-41EB-B89E-E5F18973D348}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,25 +46,9 @@ Global
 		{1D7B4540-5B9C-41EB-B89E-E5F18973D348}.Release|x64.Build.0 = Release|Any CPU
 		{1D7B4540-5B9C-41EB-B89E-E5F18973D348}.Release|x86.ActiveCfg = Release|Any CPU
 		{1D7B4540-5B9C-41EB-B89E-E5F18973D348}.Release|x86.Build.0 = Release|Any CPU
-		{A17195CE-4347-41FD-91B4-3AA72AB690F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A17195CE-4347-41FD-91B4-3AA72AB690F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A17195CE-4347-41FD-91B4-3AA72AB690F6}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{A17195CE-4347-41FD-91B4-3AA72AB690F6}.Debug|x64.Build.0 = Debug|Any CPU
-		{A17195CE-4347-41FD-91B4-3AA72AB690F6}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{A17195CE-4347-41FD-91B4-3AA72AB690F6}.Debug|x86.Build.0 = Debug|Any CPU
-		{A17195CE-4347-41FD-91B4-3AA72AB690F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A17195CE-4347-41FD-91B4-3AA72AB690F6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A17195CE-4347-41FD-91B4-3AA72AB690F6}.Release|x64.ActiveCfg = Release|Any CPU
-		{A17195CE-4347-41FD-91B4-3AA72AB690F6}.Release|x64.Build.0 = Release|Any CPU
-		{A17195CE-4347-41FD-91B4-3AA72AB690F6}.Release|x86.ActiveCfg = Release|Any CPU
-		{A17195CE-4347-41FD-91B4-3AA72AB690F6}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{FFBFC1AC-11A2-4CD1-9B71-0D1D7BC7DE43} = {ABF7502B-DA45-4936-A4D4-E0560B6AADFD}
-		{1D7B4540-5B9C-41EB-B89E-E5F18973D348} = {ABF7502B-DA45-4936-A4D4-E0560B6AADFD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8F192BF5-7BF0-4E5D-9A07-C905140688E3}
